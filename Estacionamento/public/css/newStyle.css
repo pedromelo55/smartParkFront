@@ -1,0 +1,77 @@
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.legenda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.legenda > p {
+  margin-bottom: 0;
+}
+
+#nao-ocupado {
+  width: 40px;
+  height: 40px;
+  color: black;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  background-color: #eee;
+  transition: background-color 0.3s ease;
+}
+
+#ocupado {
+  width: 40px;
+  height: 40px;
+  color: black;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  background-color: #44d0fc;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+
+  .parking-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+
+  .parking-space {
+    width: 50px;
+    height: 50px;
+    color: black;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+  }
+
+  .parking-space-occupied {
+    background-color: #44d0fc;
+    color: white;
+  }
+
+  

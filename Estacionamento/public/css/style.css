@@ -41,7 +41,6 @@
 
   .container-vaga {
     display: flex;
-    height: 80vh;
     justify-content: center;
     align-items: center;
   }
@@ -49,6 +48,7 @@
   .entrada-inf {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 
   .entrada {
@@ -65,11 +65,15 @@
   .parking-index {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
+
   .parking-lot {
     display: flex;
-    gap: 40px;
-    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
   }
 
   .down {
@@ -88,7 +92,45 @@
     display: flex;
   }
 
+  .column {
+    flex: 1; /* Faz com que a largura da coluna se ajuste ao conteúdo */
+  }
+  
+
   .parking-space {
+    width: calc(20% - 10px); /* 20% para 5 colunas, subtraindo o gap */
+    height: 50px; /* Altura igual a 50px */
+    color: black;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .center-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .parking-container2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+
+  .parking-space2 {
     width: 50px;
     height: 50px;
     color: black;
